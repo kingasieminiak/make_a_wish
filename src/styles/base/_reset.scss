@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+
+  *::selection {
+    color: white;
+    background: lightblue;
+  }
+
+  *::-moz-selection {
+    color: white;
+    background: lightblue;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p,
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  user-select: none;
+}
+
+button {
+  padding: 0;
+  font: inherit;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+}
+
+button,
+a {
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
